@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Combin</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_tabs">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="Settings">Settings</string>
+    <string name="Combin">Combin</string>
+    <string name="Drawer">Drawer</string>
+    <string name="Costume">Costume</string>
+    <string name="Activity">Activity</string>
+    <string-array name="types">
+        <item>Şapka</item>
+        <item>Gömlek</item>
+        <item>T-shirt</item>
+        <item>Mont</item>
+        <item>Pantalon</item>
+        <item>Etek</item>
+        <item>Ayakkabı</item>
+        <item>Bot</item>
+        <item>Surat</item>
+        <item>Yüksek topuklu</item>
+
+    </string-array>
+</resources>

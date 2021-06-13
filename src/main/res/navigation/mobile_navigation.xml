@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.quizz.ui.Drawler.DrawlerFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_drawer" />
+
+    <fragment
+        android:id="@+id/navigation_game"
+        android:name="com.quizz.ui.Clothes.ClothesFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_clothes" />
+
+    <fragment
+        android:id="@+id/navigation_rank"
+        android:name="com.quizz.ui.Combin.CombinFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_combin" />
+
+    <fragment
+        android:id="@+id/navigation_send_question"
+        android:name="com.quizz.ui.Activity.ActivityFragment"
+        android:label="Send Question"
+        tools:layout="@layout/fragment_activity" />
+
+    <navigation android:id="@+id/settings"
+        app:startDestination="@id/navigation_settings">
+        <fragment
+            android:id="@+id/navigation_settings"
+            android:name="com.quizz.ui.settings.SettingsFragment"
+            android:label="Settings"
+            tools:layout="@layout/fragment_settings" >
+            <action
+                android:id="@+id/action_navigation_settings_to_personaInfo"
+                app:destination="@id/personaInfo" />
+        </fragment>
+        <fragment
+            android:id="@+id/personaInfo"
+            android:name="com.quizz.PersonaInfo"
+            android:label="fragment_persona_info"
+            tools:layout="@layout/fragment_personal_info" >
+            <action
+                android:id="@+id/action_personaInfo_to_navigation_settings"
+                app:destination="@id/navigation_settings" />
+        </fragment>
+    </navigation>
+
+
+</navigation>
